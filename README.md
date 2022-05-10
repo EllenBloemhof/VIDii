@@ -13,11 +13,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Ellen Bloemhof
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: tussen blauw en rood in. 
+De reden hiervoor is dat ik wel de inhoud begrijp maar ik heb veel moeite met toepassen. Ik weet vaak niet hoe ik moet beginnen en heb vaak advies nodig. 
 
+Ik heb ook voorgenomen om veel tussentijds feedback te vragen als daar de mogelijkheid voor is en als ik vastloop met een probleem op tijd aan de bel te trekken. Ik heb vaak de neiging om te lang te blijven zitten met een issue.
 
 
 
@@ -28,8 +30,7 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
-
+  <img src="readme-images/ontwerp1.png" width="375px" alt="eerste versie/schets">
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
@@ -47,25 +48,21 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+Mijn concept was niet specifiek gericht op mijn onderwerp, Animal Crossing, en kon worden toegepast op andere onderwerpen. Wij hebben samen gekeken naar hoe wij het meer kunnen toepassen op mijn onderwerp.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  De sfeer moet worden aangepast. Steeds als je een game selecteert dan wordt de achtergrond aangepast naar het specifieke jaar dat de game is uitgekomen met kleine elementen die echt gericht zijn op de game.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+Ik had nog geen eastereggs, daar had ik moeite mee. Wij hebben hier met z'n tweetjes hierover gebrainstormt.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  **Eerste element vanuit de game:** Ergens onderin op de pagina komt een katapult tevoorschijn en als deze omhoog komt zal er een ballonnetje met een kadootje door het beeld zweven - als je de katapult selecteert knapt deze kapot. 
 
-
-
-  ### Bevinding 3:
-  ...
+  **Tweede element vanuit de game:** Als je in de game aan bomen schud valt er fruit of een blaadje naar beneden. Dat ook toepassen in mijn ontwerp door click of hover toe te voegen waardoor het boompje schud en een element naar beneden valt.
 
 </details>
 
@@ -161,7 +158,7 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
+1. Sanne 't Hooft, CodePen, uitleg positioneren en door pagina's scrollen: https://codepen.io/shooft/pen/XWZdGbq?editors=1100
 2. bron 2
 3. ...
 
