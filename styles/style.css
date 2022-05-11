@@ -17,3 +17,134 @@ button:not([disabled]) {
 h1 {
   color:crimson;
 }
+*, *::after, *::before {
+	box-sizing:border-box;	
+}
+
+body {
+	height:100vh;
+	margin:0;
+	overflow:hidden;
+}
+
+/* de container die heen en weer schuift */
+div {
+	position:absolute;
+	height:200vh;
+	width:100vw;
+	
+	background-color:gold;
+	
+	transform:translatey(-400vh);
+	
+	transition:1s;
+}
+
+body.GameCube div {
+	transform:translatey(0);
+}
+
+body.DS div {
+	transform:translatey(-100vh);
+}
+
+body.Wii div {
+	transform:translatey(-200vh);
+}
+
+body.Switch div {
+	transform:translatey(-300vh);
+}
+
+
+
+/* ALLE SECTIONS */
+section {
+	position:relative;
+	height:100vh;
+	width:100vw;
+}
+
+
+/* GameCube section */
+section.GameCube {
+	background-color:pink;
+}
+
+
+/* DS section */
+section.DS {
+	background-color:gold;
+}
+
+
+/* Wii section */
+section.Wii {
+	background-color:yellowgreen;
+}
+
+
+/* Switch section */
+section.Switch {
+	background-color:dodgerblue;
+}
+
+/* DE KNOPPEN SECTION */
+section.buttons {
+	background-color:green;
+}
+
+section.buttons ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+section.buttons ol li {
+	position:absolute;
+}
+
+section.buttons ol li:nth-of-type(1) {
+	left:20%;
+	top:33%;
+	transform:translate(-50%, -50%) rotate(10deg);
+}
+
+section.buttons ol li:nth-of-type(1) img {
+	width: 30em;
+}
+
+section.buttons ol li:nth-of-type(2) {
+	left:65%;
+	top:25%;
+	transform:translate(-50%, -50%) rotate(-10deg);
+}
+
+section.buttons ol li:nth-of-type(2) img {
+	width: 30em;
+}
+
+section.buttons ol li:nth-of-type(3) {
+	left:25%;
+	top:70%;
+	transform:translate(-50%, -50%) rotate(80deg);
+}
+
+section.buttons ol li:nth-of-type(3) img {
+	width: 9.5em;
+}
+
+section.buttons ol li:nth-of-type(4) {
+	left:75%;
+	top:75%;
+	transform:translate(-50%, -50%) rotate(-15deg);
+}
+
+section.buttons ol li:nth-of-type(4) img {
+	width: 35em;
+}
+
+section.buttons button {
+  background: none;
+  border: none;
+}

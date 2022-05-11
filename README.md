@@ -6,10 +6,6 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
-
-
-
-
 ## Jij
 
 ### Ontwerper:
@@ -21,9 +17,6 @@ De reden hiervoor is dat ik wel de inhoud begrijp maar ik heb veel moeite met to
 
 Ik heb ook voorgenomen om veel tussentijds feedback te vragen als daar de mogelijkheid voor is en als ik vastloop met een probleem op tijd aan de bel te trekken. Ik heb vaak de neiging om te lang te blijven zitten met een issue.
 
-
-
-
 # Je plan
 
 <details open>
@@ -34,27 +27,21 @@ Ik heb ook voorgenomen om veel tussentijds feedback te vragen als daar de mogeli
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
- 
+  - Responsive design
+  - Grid
 </details>
-
-
-
 
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen</summary>
 Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 
   ### Bevinding 1:
 Mijn concept was niet specifiek gericht op mijn onderwerp, Animal Crossing, en kon worden toegepast op andere onderwerpen. Wij hebben samen gekeken naar hoe wij het meer kunnen toepassen op mijn onderwerp.
 
   #### oplossing:
-  De sfeer moet worden aangepast. Steeds als je een game selecteert dan wordt de achtergrond aangepast naar het specifieke jaar dat de game is uitgekomen met kleine elementen die echt gericht zijn op de game.
+  De sfeer van het geheel moet worden aangepast. Steeds als je een game selecteert door op de controller te klikken dan wordt de achtergrond aangepast naar het specifieke jaar dat de game is uitgekomen met kleine elementen die echt gericht zijn op de game.
 
   ### Bevinding 2:
 Ik had nog geen eastereggs, daar had ik moeite mee. Wij hebben hier met z'n tweetjes hierover gebrainstormt.
@@ -64,10 +51,15 @@ Ik had nog geen eastereggs, daar had ik moeite mee. Wij hebben hier met z'n twee
 
   **Tweede element vanuit de game:** Als je in de game aan bomen schud valt er fruit of een blaadje naar beneden. Dat ook toepassen in mijn ontwerp door click of hover toe te voegen waardoor het boompje schud en een element naar beneden valt.
 
+### Bevinding 3:
+Er moet meer gebeuren met de controllers in het begin, in mijn concept hebben ze tot nu toe alleen nog maar de functie om te navigeren naar het jaar. 
+
+  #### oplossing:
+  Gaan spelen met hover op de elementen, als de bezoeker er overheen hovert de controler laten bewegen en/of het geluid afspelen van de spelcomputer.
+
+  ### Feedback op Miro en aanpassingen in beeld:
+<img src="readme-images/eerste-feedback" width="375px" alt="eerste versie/schets">
 </details>
-
-
-
 
 ## Voortgang/Feedback 2
 
@@ -147,16 +139,10 @@ Ik had nog geen eastereggs, daar had ik moeite mee. Wij hebben hier met z'n twee
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
-
-
-
-
 ## Bronnenlijst
 
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
-
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Sanne 't Hooft, CodePen, uitleg positioneren en door pagina's scrollen: https://codepen.io/shooft/pen/XWZdGbq?editors=1100
 2. bron 2
