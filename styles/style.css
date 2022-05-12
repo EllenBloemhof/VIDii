@@ -66,10 +66,46 @@ section {
 }
 
 
-/* GameCube section */
+/**************/
+/* GAMECUBE   */
+/**************/
 section.GameCube {
 	background-color:pink;
 }
+
+/* GameCube - televisie uit 2001 */
+article.televisie1 {
+	width:25em;
+	height:23em;
+	padding:3em 2em 2em 2em;
+	background-color: #262a2d;
+	border-radius:1em;
+	box-shadow:
+	  inset -.25em -.25em .25em rgb(102 102 102),
+	  1em 1em 1em rgb(0 0 0 / .1);
+  }
+  
+  /* GameCube - scherm van televisie uit 2001 */
+  section.televisie2001 {
+	position: relative;
+	height:15em;
+	width:20em;
+	background-color: #7b8f75;
+	border-radius:1em;
+	box-shadow:
+	  inset -.1em -.1em .1em rgb(52 63 47),
+	  inset .1em .1em .1em rgb(51 58 64);
+  }
+
+  /* GameCube - Sony logo op de televisie */
+  section.televisie2001 h1 {
+	position: absolute;
+	font-family: sans;
+	left: 45%;
+	top: 100%;
+	color: white;
+	font-size: 0.8em;
+  }
 
 
 /* DS section */
@@ -78,16 +114,91 @@ section.DS {
 }
 
 
-/* Wii section */
+/******************/
+/*  NINTENDO WII  */
+/******************/
 section.Wii {
 	background-color:yellowgreen;
 }
 
+/* Wii - televisie uit 2015 */
+article.tv2015 {
+	position: relative;
+	width:40em;
+	height:25em;
+	padding:3em 2em 2em 2em;
+	background-color: #262a2d;
+	border-radius:0.4em;
+	box-shadow:
+	  inset -.25em -.25em .25em rgb(102 102 102),
+  }
+  
+  /* Wii - televisiescherm uit 2015 */
+  section.scherm2015 {
+	height:19em;
+	width: 35em;
+	background-color: #d3d3d3;
+	border-radius:0.4em;
+	box-shadow:
+	  inset -.1em -.1em .1em rgb(52 63 47),
+  }
+  
+  section.scherm2015 h1 {
+	position: absolute;
+	font-family: sans-serif;
+	left: 45%;
+	top: 98%;
+	color: white;
+	font-size: 0.8em;
+  }
+  
+  section.televisie2015-tussen {
+	position: relative;
+	height: 2em;
+	width: 18em;
+	background-color: black;
+	top:15%;
+	left: 25%;
+  }
+  
+  section.televisie2015-onder {
+	position: relative;
+	height: 1.5em;
+	width: 25em;
+	background-color: #262a2d;
+	top:13%;
+	left: 15%;
+  }
 
-/* Switch section */
+
+/*********************/
+/*  NINTENDO SWITCH  */
+/*********************/
 section.Switch {
 	background-color:dodgerblue;
 }
+
+/* tv */
+article.televisie2022 {
+	position: relative;
+	width:40em;
+	height:24em;
+	padding:1em;
+	background-color: #262a2d;
+	border-radius:0.4em;
+	box-shadow:
+	  inset -.25em -.25em .25em rgb(102 102 102),
+  }
+  
+  /* Scherm */
+  section.scherm2022 {
+	height:22em;
+	width: 38em;
+	background-color: #d3d3d3;
+	border-radius:0.4em;
+	box-shadow:
+	  inset -.1em -.1em .1em rgb(52 63 47),
+  }
 
 /* DE KNOPPEN SECTION */
 section.buttons {
@@ -104,10 +215,19 @@ section.buttons ol li {
 	position:absolute;
 }
 
+section.buttons ol li {
+	position:absolute;
+}
+
 section.buttons ol li:nth-of-type(1) {
 	left:20%;
 	top:33%;
 	transform:translate(-50%, -50%) rotate(10deg);
+	transition: 0.5s;
+}
+
+section.buttons ol li:nth-of-type(1):hover {
+	transform:translate(-50%, -50%) rotate(10deg) scale(1.1);
 }
 
 section.buttons ol li:nth-of-type(1) img {
@@ -118,6 +238,11 @@ section.buttons ol li:nth-of-type(2) {
 	left:65%;
 	top:25%;
 	transform:translate(-50%, -50%) rotate(-10deg);
+	transition: 0.5s;
+}
+
+section.buttons ol li:nth-of-type(2):hover {
+	transform:translate(-50%, -50%) rotate(-10deg) scale(1.1);
 }
 
 section.buttons ol li:nth-of-type(2) img {
@@ -128,6 +253,11 @@ section.buttons ol li:nth-of-type(3) {
 	left:25%;
 	top:70%;
 	transform:translate(-50%, -50%) rotate(80deg);
+	transition: 0.5s;
+}
+
+section.buttons ol li:nth-of-type(3):hover {
+	transform:translate(-50%, -50%) rotate(80deg) scale(1.1);
 }
 
 section.buttons ol li:nth-of-type(3) img {
@@ -138,6 +268,11 @@ section.buttons ol li:nth-of-type(4) {
 	left:75%;
 	top:75%;
 	transform:translate(-50%, -50%) rotate(-15deg);
+	transition: 0.5s;
+}
+
+section.buttons ol li:nth-of-type(4):hover {
+	transform:translate(-50%, -50%) rotate(-15deg) scale(1.1);
 }
 
 section.buttons ol li:nth-of-type(4) img {
