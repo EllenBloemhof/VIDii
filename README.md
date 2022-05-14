@@ -145,7 +145,7 @@ Er moet meer gebeuren met de controllers in het begin, in mijn concept hebben ze
 <summary>continu bijhouden terwijl je werkt</summary>
 
 1. Sanne 't Hooft, CodePen, uitleg positioneren en door pagina's scrollen: https://codepen.io/shooft/pen/XWZdGbq?editors=1100
-2. bron 2
+2. Sanne 't Hooft, CodePen, animaties - springen maar: https://codepen.io/ellenbloemhof/pen/OJQNJWW
 3. ...
 
 </details>

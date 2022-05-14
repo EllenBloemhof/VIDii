@@ -56,3 +56,20 @@ function gotoGameWii() {
 function gotoGameSwitch() {
 	document.body.classList.add("Switch");
 }
+
+// Getypt door Sanne: GameCube buttons
+var GameCubeButtonA = document.querySelector(".GameCube .a-button");
+var GameCubeButtonY = document.querySelector(".GameCube .y-button");
+
+var televisie2001 = document.querySelector(".televisie2001");
+
+GameCubeButtonY.addEventListener("click", informatieHier);
+GameCubeButtonA.addEventListener("click", gameplayHier);
+
+function informatieHier() {
+	televisie2001.classList.add("toonInfo");
+}
+
+function gameplayHier() {
+	televisie2001.classList.remove("toonInfo");
+}

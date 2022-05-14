@@ -1,3 +1,20 @@
+:root {
+	--televisie-kleur: #262a2d;
+	--televisie-scherm: #d3d3d3;
+	--televisie-standaard: black;
+	--tekstkleur: #fff;
+
+	--button-b: #e00814;
+	--button-b-lijnen: #890a22;
+
+	/*Kleuren GameCube */
+	--gamecube-omlijning-button: #372870;
+	--gamecube-a-achtergrond: #009e6e;
+	--gamecube-a-letter: #04724d;
+	--gamecube-b-achtergrond: #e00814;
+	--gamecube-b-letter: #890a22;
+}
+
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -14,9 +31,6 @@ button:not([disabled]) {
 
 /* jouw CSS vanaf hier */
 
-h1 {
-  color:crimson;
-}
 *, *::after, *::before {
 	box-sizing:border-box;	
 }
@@ -26,6 +40,10 @@ body {
 	margin:0;
 	overflow:hidden;
 }
+
+
+
+
 
 /* de container die heen en weer schuift */
 div {
@@ -58,6 +76,8 @@ body.Switch div {
 
 
 
+
+
 /* ALLE SECTIONS */
 section {
 	position:relative;
@@ -65,20 +85,63 @@ section {
 	width:100vw;
 }
 
+/* ALLE BUTTONS BOVENIN DIE TERUG NAVIGEREN (B) */
+.buttonTerug {
+	position: relative;
+	top: 2em;
+	left: 2em;
+	width: 3em;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
 
-/**************/
-/* GAMECUBE   */
-/**************/
+	background-color: var(--button-b);
+	color: var(--button-b-lijnen);
+	border: var(--button-b-lijnen);
+}
+
+
+/********************/
+/*     GAMECUBE     */
+/********************/
 section.GameCube {
 	background-color:pink;
 }
 
+/*GameCube GRID */
+article.grid-gc {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1em;
+
+	place-items: end center;
+	height: 100vh;
+}
+
+/* GameCube Console*/
+section.console-gc {
+	grid-area: 1 / 1 / 2 / 2;
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	place-items: end end;
+}
+
+section.console-gc img {
+	width: 15em;
+}
+
 /* GameCube - televisie uit 2001 */
 article.televisie1 {
+	grid-area: 1 / 2 / 2 / 3;
+
 	width:25em;
 	height:23em;
+
 	padding:3em 2em 2em 2em;
-	background-color: #262a2d;
+
+	background-color: var(--televisie-kleur);
 	border-radius:1em;
 	box-shadow:
 	  inset -.25em -.25em .25em rgb(102 102 102),
@@ -88,30 +151,146 @@ article.televisie1 {
   /* GameCube - scherm van televisie uit 2001 */
   section.televisie2001 {
 	position: relative;
+
 	height:15em;
 	width:20em;
-	background-color: #7b8f75;
+
+	background-color: var(--televisie-scherm);
 	border-radius:1em;
 	box-shadow:
 	  inset -.1em -.1em .1em rgb(52 63 47),
-	  inset .1em .1em .1em rgb(51 58 64);
+	  inset .1em .1em .1em rgb(51 58 64); 
+	
+	  overflow: hidden;
   }
 
   /* GameCube - Sony logo op de televisie */
   section.televisie2001 h1 {
 	position: absolute;
+	
 	font-family: sans;
+	color: var(--tekstkleur); 
+	font-size: 0.8em;
+
 	left: 45%;
 	top: 100%;
-	color: white;
-	font-size: 0.8em;
+	
+}
+
+  /* GameCube - beeld in het televisiescherm */
+  section.televisie2001 .gifje {
+	background: url("/images/animal-crossing-gc.gif") no-repeat center center;
+	background-size: cover;
+	
+	width: 100%;
+	height: 100%;
   }
+
+  section.televisie2001.toonInfo .gifje  {
+	display:none;
+  }
+
+  section.televisie2001 .info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	display: none;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: pink;
+}
+
+section.televisie2001.toonInfo .info  {
+	display:block;
+  }
+
+  /* GameCube - plant rechts */
+section.plant-gc {
+	grid-area: 1 / 3 / 2 / 4;
+
+	height: 100%;
+	width: 100%;
+
+	top: -3em;
+	justify-content: center;
+
+	display: grid;
+	place-items: start center;
+  }
+
+section.plant-gc img {
+	width: 20em;
+}
+
+
+  /* GameCube controller */
+section.gc-buttons {
+	grid-area: 2 / 1 / 3 / 2;
+	height: 20em;
+
+	left: 63%;
+	width: 20em;
+}
+
+.a-button, .y-button {
+	position: relative;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.a-button:hover, .y-button:hover {
+	transform:scale(1.1);
+	transition: 0.2s;
+}
+
+.a-button {
+	background-color: var(--gamecube-a-achtergrond);
+	border: solid var(--gamecube-omlijning-button);
+	color: var(--gamecube-a-letter);
+
+	width: 4.5em;
+
+	left: 34.35em;
+	top: 7em;
+	z-index: 2;
+}
+
+.y-button {
+	background-color: var(--gamecube-b-achtergrond);
+	border: solid 0.1em var(--gamecube-omlijning-button);
+	color: var(--gamecube-b-letter);
+	
+	width: 2.8em;
+
+	left: 26.35em;
+	top: 9.15em;
+	z-index: 2;
+}
+
+.gc-buttons img {
+	position: absolute;
+	width: 30em;
+}
+
+
+
+
+
+
+
 
 
 /* DS section */
 section.DS {
 	background-color:gold;
 }
+
+
+
 
 
 /******************/
@@ -127,7 +306,7 @@ article.tv2015 {
 	width:40em;
 	height:25em;
 	padding:3em 2em 2em 2em;
-	background-color: #262a2d;
+	background-color: var(--televisie-kleur);
 	border-radius:0.4em;
 	box-shadow:
 	  inset -.25em -.25em .25em rgb(102 102 102),
@@ -137,7 +316,7 @@ article.tv2015 {
   section.scherm2015 {
 	height:19em;
 	width: 35em;
-	background-color: #d3d3d3;
+	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
 	box-shadow:
 	  inset -.1em -.1em .1em rgb(52 63 47),
@@ -156,7 +335,7 @@ article.tv2015 {
 	position: relative;
 	height: 2em;
 	width: 18em;
-	background-color: black;
+	background-color: var(--televisie-standaard);
 	top:15%;
 	left: 25%;
   }
@@ -165,10 +344,13 @@ article.tv2015 {
 	position: relative;
 	height: 1.5em;
 	width: 25em;
-	background-color: #262a2d;
+	background-color: var(--televisie-kleur);
 	top:13%;
 	left: 15%;
   }
+
+
+
 
 
 /*********************/
@@ -184,7 +366,7 @@ article.televisie2022 {
 	width:40em;
 	height:24em;
 	padding:1em;
-	background-color: #262a2d;
+	background-color: var(--televisie-kleur);
 	border-radius:0.4em;
 	box-shadow:
 	  inset -.25em -.25em .25em rgb(102 102 102),
@@ -194,15 +376,22 @@ article.televisie2022 {
   section.scherm2022 {
 	height:22em;
 	width: 38em;
-	background-color: #d3d3d3;
+	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
 	box-shadow:
 	  inset -.1em -.1em .1em rgb(52 63 47),
-  }
+}
 
-/* DE KNOPPEN SECTION */
+
+
+
+
+/****************************************/
+/*  BUTTONS IN DE VORM VAN CONTROLLERS  */
+/****************************************/
 section.buttons {
-	background-color:green;
+	background: url("/images/achtergrond-consoles.png");
+	background-size: cover;
 }
 
 section.buttons ol {
@@ -215,9 +404,14 @@ section.buttons ol li {
 	position:absolute;
 }
 
-section.buttons ol li {
-	position:absolute;
-}
+section.buttons ol li img {
+	filter: 
+		/* drop-shadow(.125em 0.125em .25em rgba(0 0 0 /.5)) */
+		drop-shadow(.25em 0.25em .5em rgba(0 0 0 /.5))
+		drop-shadow(.5em 0.5em 1em rgba(0 0 0 /.25));
+	
+	}
+
 
 section.buttons ol li:nth-of-type(1) {
 	left:20%;
@@ -235,8 +429,8 @@ section.buttons ol li:nth-of-type(1) img {
 }
 
 section.buttons ol li:nth-of-type(2) {
-	left:65%;
-	top:25%;
+	left:60%;
+	top:30%;
 	transform:translate(-50%, -50%) rotate(-10deg);
 	transition: 0.5s;
 }
@@ -265,7 +459,7 @@ section.buttons ol li:nth-of-type(3) img {
 }
 
 section.buttons ol li:nth-of-type(4) {
-	left:75%;
+	left:80%;
 	top:75%;
 	transform:translate(-50%, -50%) rotate(-15deg);
 	transition: 0.5s;
