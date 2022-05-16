@@ -73,3 +73,20 @@ function informatieHier() {
 function gameplayHier() {
 	televisie2001.classList.remove("toonInfo");
 }
+
+// Nintendo DS
+var DSButtonA = document.querySelector(".DS .ds-a-button");
+var DSButtonB = document.querySelector(".DS .ds-b-button");
+
+var dsOnder = document.querySelector(".ds-onder");
+
+DSButtonA.addEventListener("click", gameplayDS);
+DSButtonB.addEventListener("click", informatieDS);
+
+function informatieDS() {
+	dsOnder.classList.add("informatieDS");
+}
+
+function gameplayDS() {
+	dsOnder.classList.remove("informatieDS");
+}

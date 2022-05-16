@@ -7,12 +7,28 @@
 	--button-b: #e00814;
 	--button-b-lijnen: #890a22;
 
-	/*Kleuren GameCube */
+	/* Kleuren GameCube */
 	--gamecube-omlijning-button: #372870;
 	--gamecube-a-achtergrond: #009e6e;
 	--gamecube-a-letter: #04724d;
 	--gamecube-b-achtergrond: #e00814;
 	--gamecube-b-letter: #890a22;
+
+	--achtergrond-informatie: #000;
+	--informatie-tekst: #fff;
+
+	--schaduw-televisie: rgb(102 102 102);
+
+	/* Kleuren Nintendo DS */
+	--ds-button-achtergrond: #f4f4f4;
+	--ds-button-omlijning: #919191;
+	--ds-button-tekst: #393939;
+
+	/* Kleuren Wii*/
+
+	/* Schaduw controllers */
+	--schaduw-1: rgba(0 0 0 /.5);
+	--schaduw-2: rgba(0 0 0 /.25);
 }
 
 /* CSS Document */
@@ -50,9 +66,7 @@ div {
 	position:absolute;
 	height:200vh;
 	width:100vw;
-	
-	background-color:gold;
-	
+		
 	transform:translatey(-400vh);
 	
 	transition:1s;
@@ -94,17 +108,28 @@ section {
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 
+	z-index: 2;
+
 	background-color: var(--button-b);
 	color: var(--button-b-lijnen);
 	border: var(--button-b-lijnen);
 }
 
+.buttonTerug:hover {
+	transform:scale(1.1);
+	transition: 0.2s;
+}
 
-/********************/
-/*     GAMECUBE     */
-/********************/
+
+
+
+
+/******************************/
+/*           GAMECUBE         */
+/******************************/
 section.GameCube {
-	background-color:pink;
+	background: url("../images/background-gc.png") no-repeat center center;
+	background-size: cover;
 }
 
 /*GameCube GRID */
@@ -116,6 +141,8 @@ article.grid-gc {
 
 	place-items: end center;
 	height: 100vh;
+
+	margin-top: 2em;
 }
 
 /* GameCube Console*/
@@ -144,7 +171,7 @@ article.televisie1 {
 	background-color: var(--televisie-kleur);
 	border-radius:1em;
 	box-shadow:
-	  inset -.25em -.25em .25em rgb(102 102 102),
+	  inset -.25em -.25em .25em var(--schaduw-televisie),
 	  1em 1em 1em rgb(0 0 0 / .1);
   }
   
@@ -157,11 +184,7 @@ article.televisie1 {
 
 	background-color: var(--televisie-scherm);
 	border-radius:1em;
-	box-shadow:
-	  inset -.1em -.1em .1em rgb(52 63 47),
-	  inset .1em .1em .1em rgb(51 58 64); 
-	
-	  overflow: hidden;
+	overflow: hidden;
   }
 
   /* GameCube - Sony logo op de televisie */
@@ -174,12 +197,11 @@ article.televisie1 {
 
 	left: 45%;
 	top: 100%;
-	
-}
+	}
 
   /* GameCube - beeld in het televisiescherm */
   section.televisie2001 .gifje {
-	background: url("/images/animal-crossing-gc.gif") no-repeat center center;
+	background: url("../images/animal-crossing-gc.gif") no-repeat center center;
 	background-size: cover;
 	
 	width: 100%;
@@ -200,7 +222,12 @@ article.televisie1 {
 	width: 100%;
 	height: 100%;
 	
-	background-color: pink;
+	background-color: var(--achtergrond-informatie);
+}
+
+section.televisie2001 .info p {
+	padding: 1em;
+	color: var(--informatie-tekst);
 }
 
 section.televisie2001.toonInfo .info  {
@@ -214,7 +241,7 @@ section.plant-gc {
 	height: 100%;
 	width: 100%;
 
-	top: -3em;
+	top: -7em;
 	justify-content: center;
 
 	display: grid;
@@ -284,24 +311,128 @@ section.gc-buttons {
 
 
 
-/* DS section */
+/**************************/
+/*       NINTENDO DS    */
+/**************************/
 section.DS {
-	background-color:gold;
+	background: url("../images/achtergrond-consoles.png");
+	background-size: cover;
+}
+
+article.nintendo-ds {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+
+	gap: 9.38em;
+	place-items: center center;
+
+	margin-top: 5em;
+}
+
+article.nintendo-ds img {
+	position: absolute;
+	width: 50em;
+
+	top: 3em;
+}
+
+section.ds-boven {
+	grid-area: 1 / 1 / 2 / 2;
+
+	width: 22.5em;
+	height: 16.65em;
+	
+	background: url("../images/ac-ds-boven.gif");
+	background-size: cover;
+}
+
+section.ds-onder {
+	grid-area: 2 / 1 / 3 / 2; 
+
+	width: 22.5em;
+	height: 16.65em;
+
+	background: url("../images/ac-ds-onder.gif");
+	background-size: cover;
+}
+
+section.ds-onder .ds-info {
+	padding: 2em;
+	background-color: pink;
+
+	display: none;
+
+	width: 100%;
+}
+
+section.ds-onder.informatieDS .ds-info {
+	display:block;
+}
+.ds-a-button, .ds-b-button {
+	position: relative;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	font-weight: bold;
+
+	width: 3em;
+	top: -30em;
+
+	color: var(--ds-button-tekst);
+	border: solid 0.15em var(--ds-button-omlijning);
+}
+
+.ds-a-button:hover, .ds-b-button:hover {
+	transform:scale(1.1);
+	transition: 0.2s;
+}
+
+.ds-a-button {
+	left: 37.9em;
+}
+
+.ds-b-button {
+	left: 31.35em;
 }
 
 
 
 
 
-/******************/
-/*  NINTENDO WII  */
-/******************/
+/**************************/
+/*       NINTENDO WII     */
+/**************************/
 section.Wii {
 	background-color:yellowgreen;
 }
 
+article.grid-wii {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1em;
+
+	height: 100vh;
+	width: 100vw;
+}
+
+section.console-wii {
+	grid-area: 1 / 1 / 2 / 2;
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	place-items: end end;
+}
+
+section.console-wii img {
+	width: 6em;
+}
+
 /* Wii - televisie uit 2015 */
 article.tv2015 {
+	grid-area: 1 / 2 / 2 / 3;
+
 	position: relative;
 	width:40em;
 	height:25em;
@@ -309,7 +440,7 @@ article.tv2015 {
 	background-color: var(--televisie-kleur);
 	border-radius:0.4em;
 	box-shadow:
-	  inset -.25em -.25em .25em rgb(102 102 102),
+	  inset -.25em -.25em .25em var(--schaduw-televisie),
   }
   
   /* Wii - televisiescherm uit 2015 */
@@ -318,8 +449,6 @@ article.tv2015 {
 	width: 35em;
 	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
-	box-shadow:
-	  inset -.1em -.1em .1em rgb(52 63 47),
   }
   
   section.scherm2015 h1 {
@@ -349,6 +478,21 @@ article.tv2015 {
 	left: 15%;
   }
 
+section.plant-wii {
+	grid-area: 1 / 3 / 2 / 4;
+}
+
+section.plant-wii img {
+	width: 20em;
+}
+
+section.wii-buttons {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.wii-buttons img {
+	width: 8em;
+}
 
 
 
@@ -369,7 +513,7 @@ article.televisie2022 {
 	background-color: var(--televisie-kleur);
 	border-radius:0.4em;
 	box-shadow:
-	  inset -.25em -.25em .25em rgb(102 102 102),
+	  inset -.25em -.25em .25em var(--schaduw-televisie),
   }
   
   /* Scherm */
@@ -378,8 +522,6 @@ article.televisie2022 {
 	width: 38em;
 	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
-	box-shadow:
-	  inset -.1em -.1em .1em rgb(52 63 47),
 }
 
 
@@ -390,7 +532,7 @@ article.televisie2022 {
 /*  BUTTONS IN DE VORM VAN CONTROLLERS  */
 /****************************************/
 section.buttons {
-	background: url("/images/achtergrond-consoles.png");
+	background: url("../images/achtergrond-consoles.png");
 	background-size: cover;
 }
 
@@ -406,10 +548,8 @@ section.buttons ol li {
 
 section.buttons ol li img {
 	filter: 
-		/* drop-shadow(.125em 0.125em .25em rgba(0 0 0 /.5)) */
-		drop-shadow(.25em 0.25em .5em rgba(0 0 0 /.5))
-		drop-shadow(.5em 0.5em 1em rgba(0 0 0 /.25));
-	
+		drop-shadow(.25em 0.25em .5em var(--schaduw-1))
+		drop-shadow(.5em 0.5em 1em var(--schaduw-2));
 	}
 
 

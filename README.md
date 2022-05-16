@@ -12,10 +12,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Ellen Bloemhof
 
 #### Je startniveau:
-Mijn startniveau is: tussen blauw en rood in. 
-De reden hiervoor is dat ik wel de inhoud begrijp maar ik heb veel moeite met toepassen. Ik weet vaak niet hoe ik moet beginnen en heb vaak advies nodig. 
-
-Ik heb ook voorgenomen om veel tussentijds feedback te vragen als daar de mogelijkheid voor is en als ik vastloop met een probleem op tijd aan de bel te trekken. Ik heb vaak de neiging om te lang te blijven zitten met een issue.
+Mijn startniveau is: blauw.
+Ik begrijp wel de css-properties waar wij meer werken maar ik vind het erg lastig wanneer je welke inzet. Ik heb af en toe een setje in de goede richting nodig.
 
 # Je plan
 
