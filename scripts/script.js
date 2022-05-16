@@ -90,3 +90,33 @@ function informatieDS() {
 function gameplayDS() {
 	dsOnder.classList.remove("informatieDS");
 }
+
+// Nintendo Wii, gebaseerd op: https://codepen.io/ellenbloemhof/pen/poaEgxG
+var deButton = document.querySelector(".Wii .wii-buttons button");
+
+var informatieWii = document.querySelector(".wii-info");
+
+deButton.addEventListener("click", gameplayWii);
+
+function gameplayWii() {
+	informatieWii.classList.toggle("informatieWii");
+	console.log("jij werkt niet");
+}
+
+// Nintendo Switch
+var SwitchButtonA = document.querySelector(".Switch .switch-a");
+var SwitchButtonB = document.querySelector(".Switch .switch-b");
+
+var schermSwitch = document.querySelector(".switch-info");
+
+SwitchButtonA.addEventListener("click", gameplaySwitch);
+SwitchButtonB.addEventListener("click", informatieSwitch);
+
+function informatieSwitch() {
+	schermSwitch.classList.add("informatieSW");
+	console.log("test i guess")
+}
+
+function gameplaySwitch() {
+	schermSwitch.classList.remove("informatieSW");
+}

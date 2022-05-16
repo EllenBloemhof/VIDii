@@ -25,8 +25,9 @@ Ik begrijp wel de css-properties waar wij meer werken maar ik vind het erg lasti
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - Responsive design
-  - Grid
+  - responsive design;
+  - grid onder de knie krijgen;
+  - over het algemeen: technische kennis op doen voor in de toekomst zodat ik goed kan samenwerken met developers.
 </details>
 
 ## Voortgang/Feedback 1
@@ -56,21 +57,20 @@ Er moet meer gebeuren met de controllers in het begin, in mijn concept hebben ze
   Gaan spelen met hover op de elementen, als de bezoeker er overheen hovert de controler laten bewegen en/of het geluid afspelen van de spelcomputer.
 
   ### Feedback op Miro en aanpassingen in beeld:
-<img src="readme-images/eerste-feedback" width="375px" alt="eerste versie/schets">
+<img src="readme-images/eerste-feedback.png" width="375px" alt="eerste versie/schets">
 </details>
 
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
-  
+  <summary>Mijn bevindingen + wijzigingen</summary>
+  Maandag 16 mei heb ik samen met Tamar gekeken naar mijn ontwerp.
+
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het viel mij op dat positioneren is nog niet helemaal goed gegaan, mijn ontwerp zag er anders uit op haar beeldscherm dan bij mij.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Aantekening gemaakt hiervan en Sanne om hulp gevraagd, ik had elementen niet op de juiste plek geplaatst waardoor uitlijnen niet lukte. Hij heeft dit voor mij opgelost.
 
   ### Bevinding 2:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -144,6 +144,6 @@ Er moet meer gebeuren met de controllers in het begin, in mijn concept hebben ze
 
 1. Sanne 't Hooft, CodePen, uitleg positioneren en door pagina's scrollen: https://codepen.io/shooft/pen/XWZdGbq?editors=1100
 2. Sanne 't Hooft, CodePen, animaties - springen maar: https://codepen.io/ellenbloemhof/pen/OJQNJWW
-3. ...
+3. Sanne 't Hooft, CodePen, klikken - swap image: https://codepen.io/ellenbloemhof/pen/poaEgxG
 
 </details>
