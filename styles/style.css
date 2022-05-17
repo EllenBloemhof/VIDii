@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'infotext';
+    src: url('../fonts/vt323-regular-webfont.woff2') format('woff2'),
+         url('../fonts/vt323-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nintendobuttons';
+    src: url('../fonts/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gcbutton';
+    src: url('../fonts/bebas-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
 	--televisie-kleur: #262a2d;
 	--televisie-scherm: #d3d3d3;
@@ -25,15 +50,13 @@
 	--ds-wii-button-omlijning: #919191;
 	--ds-wii-button-tekst: #393939;
 
-	/* Kleuren Wii*/
-
 	/* Schaduw controllers */
 	--schaduw-1: rgba(0 0 0 /.5);
 	--schaduw-2: rgba(0 0 0 /.25);
 
 	/* Kleuren Nintendo Switch */
 	--switch-omlijning-button: #1d1d1b;
-	--switch-achtergrond-button: #414649;
+	--switch-achtergrond-button: #383c41;
 	--switch-letter: #fff;
 }
 
@@ -45,6 +68,14 @@
 html, body {
   height:100%;
   margin:0;
+}
+
+p {
+	font-family: 'infotext';
+}
+
+button {
+	font-family: 'nintendobuttons';
 }
 
 button:not([disabled]) {
@@ -129,6 +160,13 @@ main > div > section {
 	transition: 0.2s;
 }
 
+.buttonTerug:focus {
+	transform:scale(1.1);
+	transition: 0.2s;
+
+	outline: none;
+	border: none;
+}
 
 
 
@@ -181,7 +219,7 @@ article.televisie1 {
 	border-radius:1em;
 	box-shadow:
 	  inset -.25em -.25em .25em var(--schaduw-televisie),
-	  1em 1em 1em rgb(0 0 0 / .1);
+	  .1em .1em .1em var(--schaduw-televisie);
   }
   
   /* GameCube - scherm van televisie uit 2001 */
@@ -195,18 +233,6 @@ article.televisie1 {
 	border-radius:1em;
 	overflow: hidden;
   }
-
-  /* GameCube - Sony logo op de televisie */
-  section.televisie2001 h1 {
-	position: absolute;
-	
-	font-family: sans;
-	color: var(--tekstkleur); 
-	font-size: 0.8em;
-
-	left: 45%;
-	top: 100%;
-	}
 
   /* GameCube - beeld in het televisiescherm */
   section.televisie2001 .gifje {
@@ -223,13 +249,16 @@ article.televisie1 {
 
   section.televisie2001 .info {
 	position: absolute;
-	top: 0;
+	top: -0.8em;
 	left: 0;
 	
 	display: none;
 	
 	width: 100%;
-	height: 100%;
+	height: 110%;
+
+	padding: 2em;
+	font-size: 0.9em;
 	
 	background-color: var(--achtergrond-informatie);
 }
@@ -268,6 +297,8 @@ section.gc-buttons {
 
 	left: 63%;
 	width: 20em;
+
+	font-family: 'gcbutton';
 }
 
 .a-button, .y-button {
@@ -292,10 +323,10 @@ section.gc-buttons {
 	border: solid var(--gamecube-omlijning-button);
 	color: var(--gamecube-a-letter);
 
-	width: 4.5em;
+	width: 4.7em;
 
-	left: 34.35em;
-	top: 7em;
+	left: 34.45em;
+	top: 6.9em;
 	z-index: 2;
 }
 
@@ -307,7 +338,7 @@ section.gc-buttons {
 	width: 2.8em;
 
 	left: 26.35em;
-	top: 9.15em;
+	top: 9.05em;
 	z-index: 2;
 }
 
@@ -337,12 +368,12 @@ article.nintendo-ds {
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, 1fr);
 
-	gap: 9.38em;
+	gap: 9.37em;
 	place-items: center;
 
 	margin-top: 5em;
 
-	background-image: url("../images/controller-ds.png") no-repeat center center;;
+	background-image: url("../images/controller-ds.png") no-repeat center center;
 	background-size: 50em;
 }
 
@@ -374,7 +405,7 @@ section.ds-onder img {
 }
 
 section.ds-onder .ds-info {
-	padding: 2em;
+	padding: 1em;
 	
 	display: none;
 
@@ -387,6 +418,10 @@ section.ds-onder .ds-info {
 
 section.ds-onder.informatieDS .ds-info {
 	display:block;
+}
+
+section.ds-onder.informatieDS img {
+	display: none;
 }
 .ds-a-button, .ds-b-button {
 	position: absolute;
@@ -514,7 +549,7 @@ article.tv2015 {
 	background-color: var(--televisie-kleur);
 	top:13%;
 	left: 15%;
-  }
+}
 
 section.plant-wii {
 	grid-area: 1 / 3 / 2 / 4;
@@ -574,15 +609,18 @@ article.grid-switch {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-
+	gap: 2em;
+	
 	height: 100vh;
 	width: 100vw;
 
-	margin-top: 2em;
+	margin-top: 10em;
+
+	place-items: end center;
 }
 
 section.console-switch {
-	grid-area: 1 / 1 / 3 / 2;
+	grid-area: 1 / 1 / 1 / 2;	
 }
 
 section.console-switch img {
@@ -594,19 +632,24 @@ article.televisie2022 {
 	grid-area: 1 / 2 / 2 / 3;
 
 	position: relative;
+	
 	width:40em;
 	height:22em;
+	
 	padding:1em;
+	
 	background-color: var(--televisie-kleur);
 	border-radius:0.4em;
-	box-shadow:
-	  inset -.25em -.25em .25em var(--schaduw-televisie),
-  }
+	box-shadow: inset -.25em -.25em .25em var(--schaduw-televisie);
+
+	top: -8em;
+}
   
-  /* Scherm */
-  section.scherm2022 {
+/* Scherm */
+section.scherm2022 {
 	height:20em;
 	width: 38em;
+	
 	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
 }
@@ -645,10 +688,39 @@ section.plant-switch img {
 
 section.switch-buttons {
 	grid-area: 2 / 2 / 3 / 2;
+	top: -8em;
 }
 
 section.switch-buttons img {
 	width: 30em;
+}
+
+section.switch-buttons button {
+	position: absolute;
+	
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+
+	width: 2.6em;
+
+	border: solid 0.13em var(--switch-omlijning-button);
+	background-color: var(--switch-achtergrond-button);
+	color: var(--switch-letter);
+}
+
+.switch-a {
+	top: 6.27em;
+	left: 29em;
+}
+
+.switch-b {
+	top: 8.7em;
+	left: 26.15em;
+}
+
+section.switch-buttons button:hover {
+	transform:scale(1.1);
+	transition: 0.2s;
 }
 
 
@@ -689,6 +761,14 @@ section.buttons ol li:nth-of-type(1) {
 
 section.buttons ol li:nth-of-type(1):hover {
 	transform:translate(-50%, -50%) rotate(10deg) scale(1.1);
+}
+
+/* NAVRAGEN */
+section.buttons ol li:nth-of-type(1):focus {
+	transform:translate(-50%, -50%) rotate(10deg) scale(1.1);
+
+	border: none;
+	outline: none;
 }
 
 section.buttons ol li:nth-of-type(1) img {
