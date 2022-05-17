@@ -145,4 +145,5 @@ Er moet meer gebeuren met de controllers in het begin, in mijn concept hebben ze
 1. Sanne 't Hooft, CodePen, uitleg positioneren en door pagina's scrollen: https://codepen.io/shooft/pen/XWZdGbq?editors=1100
 2. Sanne 't Hooft, geforkte CodePen, animaties - springen maar: https://codepen.io/ellenbloemhof/pen/OJQNJWW
 3. Sanne 't Hooft, CodePen, klikken - swap image: https://codepen.io/shooft/pen/mdpoYve
+4. Schudden animeren: wobble-hor-top, https://animista.net/play/attention/wobble/wobble-hor-top
 </details>
