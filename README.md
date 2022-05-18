@@ -13,7 +13,7 @@ Ellen Bloemhof
 
 #### Je startniveau:
 Mijn startniveau is: blauw.
-⋅⋅⋅Ik begrijp wel de css-properties waar wij mee werken maar ik vind het erg lastig wanneer je welke inzet. Ik weet vaak wat ik wil maar het moeite met hoe ik dit zou moeten uitwerken. Ik heb af en toe een setje in de goede richting nodig.
+Ik begrijp wel de css-properties waar wij mee werken maar ik vind het erg lastig wanneer je welke inzet. Ik weet vaak wat ik wil maar het moeite met hoe ik dit zou moeten uitwerken. Ik heb af en toe een setje in de goede richting nodig.
 
 # Je plan
 
@@ -84,26 +84,15 @@ Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 
 <details>
   <summary>Mijn bevindingen + wijzigingen</summary>
-  
+  Woensdag 18 mei heb ik samen met Mirte de laatste feedback ronde gedaan.
+
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Mirte is geen fan van de plaatsing en styling van mijn B-button bovenin. Ik heb 'm nu vormgegeven als een B-button zoals ze eruit zien op de consoles.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Stijling hiervan aanpassen zodat hij meer opvalt.
 
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
-
+  <img src="readme-images/feedback-mirte.png" width="375px" alt="final ontwerp">
 </details>
 
 
@@ -115,22 +104,28 @@ Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/volledige-ontwerp.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb geleerd hoe je onderdelen van positioneren door gebruik te maken van grid. Ook begrijp ik nu position relative en absolute beter, deze twee properties hadden mij erg afgeschrikt in het eerste leerjaar en daardoor durfde ik ze nooit toe te passen.
+  - Wat ikzelf fijn vond om te leren was dat je gemakkelijk in een keer alle kleuren kan aanpassen door het in de root te plaatsen, ik had daar nog niet eerder van gehoord. 
+  - Ook heb ik geleerd hoe je onderdelen van positioneren door gebruik te maken van grid. 
+  - Ook begrijp ik nu position relative en absolute beter, deze twee properties hadden mij erg afgeschrikt in het eerste leerjaar en daardoor durfde ik ze nooit toe te passen.
+  - dat je een startscherm kan toevoegen aan je website.
+  - JavaScript is minder eng.
 
-  Ik heb trouwens wel echt geleerd dat het echt heel belangrijk is dat je ook met andere mensen gaat zitten om te werken hieraan. Het is fijn om hulp en feedback tussendoor te vragen en ook om je aanpak te valideren.
+  - Ik heb trouwens wel echt geleerd, dit is misschien nog het meest belangrijkste, dat het echt heel belangrijk is dat je ook met andere mensen gaat zitten om te werken hieraan. Het is fijn om hulp en feedback tussendoor te vragen en ook om je aanpak te valideren.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/grid.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik heb moeite met elementen aanduiden in de stylesheet. Mijn hoofd krijgt een storing zodra elementen dubbel zijn en daardoor heb ik classes gebruikt; waardoor ik veel onnodige classes heb gebruikt wat niet nodig zou zijn geweest. Dit is iets waar ik mij meer in zou moeten verdiepen om het op de juiste manier te doen.
+  - Ik heb moeite met elementen aanduiden in de stylesheet. Mijn hoofd krijgt een storing zodra elementen dubbel zijn en daardoor heb ik classes gebruikt; waardoor ik veel onnodige classes heb gebruikt wat niet nodig zou zijn geweest. Dit is iets waar ik mij meer in zou moeten verdiepen om het op de juiste manier te doen.
 
-  Ik had gepland om meerdere easter eggs te maken die gericht zijn op de game zoals de katapult maar dit heb ik niet kunnen uitwerken. Ik vond positioneren erg lastig waardoor ik beter daar mijn tijd aan kon spenderen dan de leuke extra's.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  - Ik had meer willen opleveren dan er tijd voor was en heb daardoor dingen moeten laten vallen. Ik had gepland om meerdere easter eggs te maken die gericht zijn op de game zoals de katapult maar dit heb ik niet kunnen uitwerken. Ik vond positioneren erg lastig waardoor ik beter daar mijn tijd aan kon spenderen dan de leuke extra's. 
+
+  Ik ben mijzelf wel ontzettend tegengekomen bij dit vak, de emotionele rollercoaster heb ik inmiddels wel elf keer doorlopen. 
+  <img src="readme-images/niet-gelukt.png" width="375px" alt="bummer">
 </details>
 
 ## Bronnenlijst
@@ -146,12 +141,14 @@ Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 
 ### Bronnen gifjes/tekst:
 
-1. GameCube gif: Animal Crossing - GameCube Intro HD, https://youtu.be/ij_Z__adPMY
-2. GameCube tekst: Animal Crossing (videogame), https://en.wikipedia.org/wiki/Animal_Crossing_(video_game)
-3. Nintendo DS gif: Animal Crossing: Wild World - Nintendo DS Gameplay High Resolution (DeSmuME),https://youtu.be/ArcR_dGhn9U
-4. Nintendo DS tekst: Animal Crossing: Wild World, https://nl.wikipedia.org/wiki/Animal_Crossing:_Wild_World
-5. Nintendo Wii gif: Let's Play: Animal Crossing-City Folk (part 1) "Setting Out", https://youtu.be/2FnzxkeKJSA
-6. Nintendo Wii tekst: Animal Crossing: Let's go to the city, https://nl.wikipedia.org/wiki/Animal_Crossing:_Let%27s_Go_to_the_City
-7. Nintendo Switch gif: Animal Crossing: New Horizons - Gameplay Walkthrough Part 1 - First Day on a New Island!, https://youtu.be/qui_P7672OA
-8. Nintendo Switch tekst: Animal Crossing: New Horizons, https://nl.wikipedia.org/wiki/Animal_Crossing:_New_Horizons
+1. Animal Crossing, logo, https://logos-world.net/animal-crossing-logo/
+2. Favicon: https://www.logolynx.com/topic/animal+crossing#&gid=1&pid=6
+3. GameCube gif: Animal Crossing - GameCube Intro HD, https://youtu.be/ij_Z__adPMY
+4. GameCube tekst: Animal Crossing (videogame), https://en.wikipedia.org/wiki/Animal_Crossing_(video_game)
+5. Nintendo DS gif: Animal Crossing: Wild World - Nintendo DS Gameplay High Resolution (DeSmuME),https://youtu.be/ArcR_dGhn9U
+6. Nintendo DS tekst: Animal Crossing: Wild World, https://nl.wikipedia.org/wiki/Animal_Crossing:_Wild_World
+7. Nintendo Wii gif: Let's Play: Animal Crossing-City Folk (part 1) "Setting Out", https://youtu.be/2FnzxkeKJSA
+8. Nintendo Wii tekst: Animal Crossing: Let's go to the city, https://nl.wikipedia.org/wiki/Animal_Crossing:_Let%27s_Go_to_the_City
+9. Nintendo Switch gif: Animal Crossing: New Horizons - Gameplay Walkthrough Part 1 - First Day on a New Island!, https://youtu.be/qui_P7672OA
+10. Nintendo Switch tekst: Animal Crossing: New Horizons, https://nl.wikipedia.org/wiki/Animal_Crossing:_New_Horizons
 </details>

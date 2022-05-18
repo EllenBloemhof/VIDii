@@ -24,11 +24,18 @@
 }
 
 :root {
+	/* Startscherm */
+	--startscherm-achtergrond: #a5cfcc;
+	--startscherm-achtergrond-button: #f2d540;
+	--startscherm-omlijning-button: #634521;
+
+	/* Styling televisie */
 	--televisie-kleur: #262a2d;
 	--televisie-scherm: #d3d3d3;
 	--televisie-standaard: #000;
 	--tekstkleur: #fff;
 
+	/* Styling terug-buttons */
 	--button-b: #e00814;
 	--button-b-lijnen: #890a22;
 
@@ -68,6 +75,10 @@
 	--switch-achtergrond-info: #66cda2;
 }
 
+
+
+
+
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -89,8 +100,6 @@ button {
 button:not([disabled]) {
   cursor:pointer;
 }
-
-/* jouw CSS vanaf hier */
 
 *, *::after, *::before {
 	box-sizing:border-box;	
@@ -137,7 +146,52 @@ body.Switch div {
 
 
 
-/* ALLE SECTIONS */
+/* STARTSCHERM, uitleg van Mirte, orignal bron Sanne */
+aside {
+    position: fixed;
+
+	display: grid;
+    place-items: center;
+    inset: 0;
+
+    z-index: 1000;
+
+    background-color: var(--startscherm-achtergrond);
+    transition: 1s;
+}
+
+aside img {
+	width: 50em;
+}
+
+aside p {
+	font-size: 2em;
+}
+
+aside > button {
+	padding: 2em 4em 2em 4em;
+	border-radius: 10em;
+
+	background-color: var(--startscherm-achtergrond-button);
+	border: solid 0.2em var(--startscherm-omlijning-button);
+}
+
+aside > button:hover {
+	transform:scale(1.1);
+	transition: 0.2s;
+}
+
+/* dmv van JavaScript komt deze class op het startscherm en verdwijnt deze uit beeld */
+aside.gestart {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+/* Alle section worden aangesproken */
 section {
 	position:relative;
 }
@@ -147,19 +201,20 @@ main > div > section {
 	width:100vw;
 }
 
-/* ALLE BUTTONS BOVENIN DIE TERUG NAVIGEREN (B) */
+/* ALLE BUTTONS BOVENIN DIE TERUG NAVIGEREN (B), komt terug op ieder jaartal/console */
 .buttonTerug {
 	position: relative;
 	top: 1em;
 	left: 2em;
 	width: 3em;
+
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 
 	z-index: 2;
 
 	background-color: var(--button-b);
-	color: var(--button-b-lijnen);
+	color: var(--tekstkleur);
 	border: var(--button-b-lijnen);
 }
 
@@ -168,7 +223,7 @@ main > div > section {
 	transition: 0.2s;
 }
 
-.buttonTerug:focus {
+.buttonTerug button:focus {
 	transform:scale(1.1);
 	transition: 0.2s;
 
@@ -203,6 +258,7 @@ article.grid-gc {
 /* GameCube Console */
 section.console-gc {
 	grid-area: 1 / 1 / 2 / 2;
+	
 	width: 100%;
 	height: 100%;
 
@@ -230,7 +286,7 @@ article.televisie1 {
 	  .1em .1em .1em var(--schaduw-televisie);
 }
   
-/* GameCube - scherm van televisie uit 2001 */
+/* Televisiescherm, hierin staat inhoud: styling scherm, gif dat afspeelt en informatie */
 section.televisie2001 {
 	position: relative;
 
@@ -383,6 +439,7 @@ section.gc-buttons {
 	position: relative;
 	aspect-ratio: 1/1;
 	border-radius: 50%;
+	
 	font-weight: bold;
 }
 
@@ -415,11 +472,13 @@ section.gc-buttons {
 	
 	width: 2.8em;
 
-	left: 26.35em;
 	top: 9.05em;
+	left: 26.35em;
+
 	z-index: 2;
 }
 
+/* Afbeelding van de controller onder de buttons */
 .gc-buttons img {
 	position: absolute;
 	width: 30em;
@@ -434,7 +493,7 @@ section.gc-buttons {
 
 
 /**************************/
-/*       NINTENDO DS    */
+/*       NINTENDO DS      */
 /**************************/
 section.DS {
 	background: url("../images/ds-back.png") no-repeat center center;
@@ -461,6 +520,7 @@ article.nintendo-ds img {
 	width: 50em;
 }
 
+/* Bovenste gedeelte van de DS */
 section.ds-boven {
 	grid-area: 1 / 1 / 2 / 2;
 
@@ -472,6 +532,7 @@ section.ds-boven img {
 	width: 100%;
 }
 
+/* Onderste gedeelte van de DS bevat: styling, informatie, gameplay als gif en de buttons */
 section.ds-onder {
 	grid-area: 2 / 1 / 3 / 2; 
 
@@ -483,6 +544,7 @@ section.ds-onder img {
 	width: 100%;
 }
 
+/* Informatie over de game, deze staat standaard op display: none */
 section.ds-onder .ds-info {
 	padding: 1em;
 	
@@ -495,12 +557,13 @@ section.ds-onder .ds-info {
 	color: var(--informatie-tekst);
 }
 
-/* Dmv JavaScript wordt deze class toegevoegd zodat hij in beeld verschijnt */
+/* Dmv JavaScript, click, wordt deze class toegevoegd zodat hij in beeld verschijnt */
 section.ds-onder.informatieDS .ds-info {
 	display:block;
 }
 
-/* Dmv JavaScript wordt deze class toegevoegd zodat hij in beeld verdwijnt */
+/* 	Dmv JavaScript, click, wordt deze class toegevoegd zodat hij in beeld verdwijnt
+	Zodat de gif niet doorspeelt onder de informatie */
 section.ds-onder.informatieDS img {
 	display: none;
 }
@@ -590,26 +653,28 @@ article.tv2015 {
 	  inset -.25em -.25em .25em var(--schaduw-televisie),
   }
   
-  /* Wii - televisiescherm uit 2015 */
-  section.scherm2015 {
+/* Televisiescherm, hierin staat inhoud: styling scherm, gif dat afspeelt en informatie */  
+section.scherm2015 {
 	height:17em;
-	width: 33em;
+	width: 35em;
+
 	background-color: var(--televisie-scherm);
 	border-radius:0.4em;
-  }
+}
 
-  section.scherm2015 img {
+section.scherm2015 img {
 	overflow:hidden;
 	width: 100%;
-  }
+}
  
-  .wii-info {
+/* Informatie over de game, deze staat standaard op display: none */
+.wii-info {
 	position: absolute;
 	background-color: var(--achtergrond-informatie);
 
 	top: 0;
 
-	height:19em;
+	height:20em;
 	width: 35em;
 
 	color: var(--informatie-tekst);
@@ -617,30 +682,38 @@ article.tv2015 {
 	padding: 2em;
 
 	display: none;
-  }
-
-.wii-info.informatieWii {
-	display: block;
-  }
-  
-  section.televisie2015-tussen {
-	position: relative;
-	height: 2em;
-	width: 18em;
-	background-color: var(--televisie-standaard);
-	top:5em;
-	left: 25%;
-  }
-  
-  section.televisie2015-onder {
-	position: relative;
-	height: 1.5em;
-	width: 25em;
-	background-color: var(--televisie-kleur);
-	top: 4em;
-	left: 15%;
 }
 
+/* Dmv JavaScript, een toggle, wordt deze class toegevoegd zodat hij in beeld verschijnt */
+.wii-info.informatieWii {
+	display: block;
+}
+  
+section.televisie2015-tussen {
+	position: relative;
+
+	height: 2em;
+	width: 18em;
+
+	top:5em;
+	left: 25%;
+
+	background-color: var(--televisie-standaard);
+}
+  
+section.televisie2015-onder {
+	position: relative;
+	
+	height: 1.5em;
+	width: 25em;
+	
+	top: 4em;
+	left: 15%;
+
+	background-color: var(--televisie-kleur);
+}
+
+/* Plant Wii */
 section.plant-wii {
 	grid-area: 1 / 3 / 2 / 4;
 
@@ -655,11 +728,13 @@ section.plant-wii img {
 		drop-shadow(.2em 2em 1em var(--schaduw-2));
 }
 
+/* Animatie om de plant te laten bewegen, heeft dezelfde animatienaam als bij de plant op de GameCube, hier opnieuw aangeroepen */
 .plant-wii:hover {
 	-webkit-animation: wobble-hor-top 0.8s infinite both;
 	animation: wobble-hor-top 0.8s infinite both;
 }
 
+/* Buttons van de Wii controller */
 section.wii-buttons {
 	grid-area: 2 / 2 / 3 / 2;
 }
@@ -724,7 +799,7 @@ section.console-switch img {
 	width: 20em;
 }
 
-/* tv */
+/* Televisie van de Switch */
 article.televisie2022 {
 	grid-area: 1 / 2 / 2 / 3;
 
@@ -746,7 +821,7 @@ article.televisie2022 {
 		drop-shadow(.5em 0.1em 1em var(--led-televisie-2));
 }
   
-/* Scherm */
+/* Televisiescherm, hierin staat inhoud: styling scherm, gif dat afspeelt en informatie */
 section.scherm2022 {
 	height:20em;
 	width: 38em;
@@ -760,6 +835,7 @@ section.scherm2022 img {
 	width: 100%;
 }
 
+/* Informatie over de game, deze staat standaard op display: none */
 .switch-info {
 	position: absolute;
 	background-color: var(--switch-achtergrond-info);
@@ -793,7 +869,8 @@ section.plant-switch img {
 	width: 15em;
 }
 
-/* Bron: https://animista.net/play/attention/wobble/wobble-hor-bottom */
+/*	Net als bij de twee vorige planten beweegt de plant op-en-neer als je er overheen hovert, echter is deze animatie anders omdat deze plant staat ipv. hangt 
+	Bron: https://animista.net/play/attention/wobble/wobble-hor-bottom */
 section.plant-switch:hover {
 	-webkit-animation: wobble-hor-bottom 0.8s infinite both;
 	        animation: wobble-hor-bottom 0.8s infinite both;
@@ -857,7 +934,8 @@ section.plant-switch:hover {
 			  transform: translateX(-6px) rotate(-1.2deg);
 	}
 }
-  
+
+/* Buttons van de Switch/Pro controller */
 section.switch-buttons {
 	grid-area: 2 / 2 / 3 / 2;
 	top: -8em;
@@ -910,6 +988,7 @@ section.buttons {
 section.buttons ol {
 	margin:0;
 	padding:0;
+
 	list-style:none;
 }
 
@@ -921,12 +1000,14 @@ section.buttons ol li img {
 	filter: 
 		drop-shadow(.25em 0.25em .5em var(--schaduw-1))
 		drop-shadow(.5em 0.5em 1em var(--schaduw-2));
-	}
+}
 
 
+/* GameCube controller */
 section.buttons ol li:nth-of-type(1) {
-	left:20%;
 	top:33%;
+	left:20%;
+
 	transform:translate(-50%, -50%) rotate(10deg);
 	transition: 0.5s;
 }
@@ -935,21 +1016,16 @@ section.buttons ol li:nth-of-type(1):hover {
 	transform:translate(-50%, -50%) rotate(10deg) scale(1.1);
 }
 
-/* NAVRAGEN */
-section.buttons ol li:nth-of-type(1):focus {
-	transform:translate(-50%, -50%) rotate(10deg) scale(1.1);
-
-	border: none;
-	outline: none;
-}
-
 section.buttons ol li:nth-of-type(1) img {
 	width: 30em;
 }
 
+
+/* Nintendo DS controller */
 section.buttons ol li:nth-of-type(2) {
-	left:60%;
 	top:30%;
+	left:60%;
+	
 	transform:translate(-50%, -50%) rotate(-10deg);
 	transition: 0.5s;
 }
@@ -962,9 +1038,12 @@ section.buttons ol li:nth-of-type(2) img {
 	width: 30em;
 }
 
-section.buttons ol li:nth-of-type(3) {
-	left:25%;
+
+/* Wii controller */
+section.buttons ol li:nth-of-type(3) {	
 	top:70%;
+	left:25%;
+
 	transform:translate(-50%, -50%) rotate(80deg);
 	transition: 0.5s;
 }
@@ -977,9 +1056,12 @@ section.buttons ol li:nth-of-type(3) img {
 	width: 9.5em;
 }
 
+
+/* Switch/Pro controller */
 section.buttons ol li:nth-of-type(4) {
-	left:80%;
 	top:75%;
+	left:80%;
+
 	transform:translate(-50%, -50%) rotate(-15deg);
 	transition: 0.5s;
 }
