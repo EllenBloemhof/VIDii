@@ -105,19 +105,20 @@ Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 
   ### Je uitkomst - karakteristiek screenshot(s):
   <img src="readme-images/volledige-ontwerp.png" width="375px" alt="final ontwerp">
-
+  Ik heb er bewust voor gekozen om alle beelden zelf te maken zodat ik zeker weet dat ik met afbeeldingen werk die van hoge kwaliteit zijn en geen tijd kwijt ben aan de juiste afbeelding vinden. Hierdoor passen alle onderdelen goed bij elkaar.
 
   ### Dit ging goed/Heb ik geleerd: 
-  - Wat ikzelf fijn vond om te leren was dat je gemakkelijk in een keer alle kleuren kan aanpassen door het in de root te plaatsen, ik had daar nog niet eerder van gehoord. 
-  - Ook heb ik geleerd hoe je onderdelen van positioneren door gebruik te maken van grid. 
-  - Ook begrijp ik nu position relative en absolute beter, deze twee properties hadden mij erg afgeschrikt in het eerste leerjaar en daardoor durfde ik ze nooit toe te passen.
+  - Wat ikzelf fijn vond om te leren is dat je gemakkelijk in een keer alle kleuren kan aanpassen door het in de root te plaatsen, ik had daar nog niet eerder van gehoord. 
+  - Ook heb ik geleerd hoe je onderdelen kan positioneren door gebruik te maken van grid. 
+  - Ook begrijp ik nu position: relative en absolute beter, deze twee properties hadden mij erg afgeschrikt in het eerste leerjaar en daardoor durfde ik ze nooit toe te passen.
   - dat je een startscherm kan toevoegen aan je website.
   - JavaScript is minder eng.
-
-  - Ik heb trouwens wel echt geleerd, dit is misschien nog het meest belangrijkste, dat het echt heel belangrijk is dat je ook met andere mensen gaat zitten om te werken hieraan. Het is fijn om hulp en feedback tussendoor te vragen en ook om je aanpak te valideren.
+  - dat je heel anders moet nadenken bij dit vak, alles moet stap-voor-stap, ik loop vaak de logica voorbij en wil meteen aan de slag. Ik moest mijzelf even op de rem zetten.
+  - dit is misschien nog het meest belangrijkste, ik heb geleerd dat het echt heel belangrijk is dat je ook met andere mensen gaat zitten om te werken hieraan. Het is fijn om hulp en feedback tussendoor te vragen en ook om je aanpak te valideren. Fijn dat daar zoveel ruimte voor was in de lessen maar ook daarbuiten er momenten voor waren.
+  - knutselen!!!
 
   <img src="readme-images/grid.png" width="375px" alt="top">
-
+  Voorbeeld hiervan is grid, dat ik de ruimte heb kunnen vormgeven daarmee.
 
   ### Dit was lastig/Is niet gelukt:
   - Ik heb moeite met elementen aanduiden in de stylesheet. Mijn hoofd krijgt een storing zodra elementen dubbel zijn en daardoor heb ik classes gebruikt; waardoor ik veel onnodige classes heb gebruikt wat niet nodig zou zijn geweest. Dit is iets waar ik mij meer in zou moeten verdiepen om het op de juiste manier te doen.
@@ -138,6 +139,7 @@ Ik heb dinsdag 10 mei samen met Mirte gekeken naar mijn concept.
 3. Sanne 't Hooft, CodePen, klikken - swap image: https://codepen.io/shooft/pen/mdpoYve
 4. Schudden onder animeren: wobble-hor-top, https://animista.net/play/attention/wobble/wobble-hor-top
 5. Schudden boven animeren, wobble-hor-bottom, https://animista.net/play/attention/wobble/wobble-hor-bottom
+6. Sanne 't Hooft (in-person): JavaScript, controllers op de plek zetten, positioneren, mijn stomme fouten oplossen
 
 ### Bronnen gifjes/tekst:
 
